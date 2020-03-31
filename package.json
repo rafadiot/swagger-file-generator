@@ -1,0 +1,46 @@
+{
+	"name": "swagger-file-generator",
+	"version": "1.0.0",
+	"description": "Generate swagger file based on jsdoc comments.",
+	"main": "./src/index.js",
+	"repository": "https://github.com/rafadiot/swagger-file-generator.git",
+	"keywords": [
+		"swagger",
+		"swagger file",
+		"swagger generator",
+		"swagger file generator",
+		"swagger jsdoc",
+		"swagger json file",
+		"swagger documentation",
+		"api documentation"
+	],
+	"author": "Tuan Le Minh",
+	"license": "MIT",
+	"scripts": {
+		"lint": "eslint ./**/*.js"
+	},
+	"bin": {
+		"swagger-file-generator": "./index.js"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"./**/*.js": [
+			"eslint --fix",
+			"git add"
+		]
+	},
+	"dependencies": {
+		"swagger-jsdoc": "^4.0.0"
+	},
+	"devDependencies": {
+		"eslint": "^6.8.0",
+		"eslint-config-airbnb-base": "^14.1.0",
+		"eslint-plugin-import": "^2.20.2",
+		"husky": "^4.2.3",
+		"lint-staged": "^10.1.0"
+	}
+}
