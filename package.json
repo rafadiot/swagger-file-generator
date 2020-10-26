@@ -1,7 +1,7 @@
 {
 	"name": "swagger-file-generator",
 	"version": "1.0.0",
-	"description": "Generate swagger file based on jsdoc comments.",
+	"description": "Generate swagger file based on JSDoc comments.",
 	"main": "./src/index.js",
 	"repository": "https://github.com/rafadiot/swagger-file-generator.git",
 	"keywords": [
@@ -14,7 +14,7 @@
 		"swagger documentation",
 		"api documentation"
 	],
-	"author": "Tuan Le Minh",
+	"author": "Tuan Le Minh <minhtuanchannhan@gmail.com>",
 	"license": "MIT",
 	"scripts": {
 		"lint": "eslint ./**/*.js"
